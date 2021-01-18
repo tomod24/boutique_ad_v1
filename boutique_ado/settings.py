@@ -127,9 +127,9 @@ else:
         }
     }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://sbkdcjpdhblsdk:a53cc63fa2148b2e555b758a070eea8b97de5b076ba3bd8a943a3247c0aa5111@ec2-34-248-148-63.eu-west-1.compute.amazonaws.com:5432/d2bcmgbc3c67d4')
-}
+# # DATABASES = {
+#     'default': dj_database_url.parse('postgres://sbkdcjpdhblsdk:a53cc63fa2148b2e555b758a070eea8b97de5b076ba3bd8a943a3247c0aa5111@ec2-34-248-148-63.eu-west-1.compute.amazonaws.com:5432/d2bcmgbc3c67d4')
+# }
 
 
 # Password validation
@@ -205,7 +205,7 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
